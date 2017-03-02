@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:gravity="center_vertical"
+        android:id="@+id/help_view" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/help_service_title_textview"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="15.5dp"
+            android:text="Enable Service: ">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="14dp"
+            android:id="@+id/help_service_textview"
+            android:text="AudioControl will be Auto disabled if it is closed from the recents menu. If you would like it to always remain in the background, enable the AudioControl service.">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/help_route_title_textview"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="15.5dp"
+            android:text="Routing streams: ">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="14dp"
+            android:id="@+id/help_route_textview"
+            android:text="The default routing stream is Media (if none are selected). You may select multiple routing streams. In case of any issues, disabling the service/app will reset all routing settings to default.">
+        </TextView>
+    </LinearLayout>
+</ScrollView>

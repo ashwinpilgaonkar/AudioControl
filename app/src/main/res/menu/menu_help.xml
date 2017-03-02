@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ashwinpilgaonkar.audiocontrol.MainActivity">
+
+    <item
+        android:id="@+id/action_help2"
+        android:title="@string/action_help"
+        app:showAsAction="always"/>
+</menu>

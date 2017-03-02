@@ -1,0 +1,53 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+
+    <PreferenceCategory
+        android:title="Which audio streams to route?">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:title="Media"
+            android:key="Media_Checkbox"
+            android:icon="@android:drawable/ic_lock_silent_mode"
+            android:summary="Route general audio (Eg. Music)" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:title="Phone"
+            android:key="Phone_Checkbox"
+            android:icon="@android:drawable/ic_menu_call"
+            android:summary="Route in call Audio (Eg. Phonecalls)" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:title="Notifications"
+            android:key="Notif_Checkbox"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:summary="Route notification sounds (Eg. Ringtones)" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:title="Alarms"
+            android:key="Alarms_Checkbox"
+            android:icon="@android:drawable/ic_lock_idle_alarm"
+            android:summary="Route alarm tone" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="Background service">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:title="Enable AudioControl Service"
+        android:key="Service_Switch"
+        android:summary="Keeps AudioControl always running in the background" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

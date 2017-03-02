@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:gravity="center_vertical"
+        android:id="@+id/help_view" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/help_enable_title_textview"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="15.5dp"
+            android:text="Enable: ">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="14dp"
+            android:id="@+id/help_enable_textview"
+            android:text="This will enable audio routing. Disable to reset to defaults. Enable the service from the settings menu for AudioControl to persist in the background.">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/help_routeA_title_textview"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="15.5dp"
+            android:text="Route Audio via: ">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="14dp"
+            android:id="@+id/help_routeA_textview"
+            android:text="Selecting the Earpiece option will activate the phone speaker on the top of your device. Selecting Speaker, will activate the primary loudspeaker of the device. The rest are self explanatory.">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/help_proximity_title_textview"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="15.5dp"
+            android:text="Enable Proximity Sensor: ">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="14dp"
+            android:id="@+id/help_proximity_textview"
+            android:text="Selecting this option will activate the proximity sensor which will turn off the screen when any object is detected at close proximity to the screen. (Eg. Putting the device to your ear turns off the screen during a call). WARNING: THIS WILL CAUSE BATTERY DRAIN.">
+        </TextView>
+    </LinearLayout>
+</ScrollView>
